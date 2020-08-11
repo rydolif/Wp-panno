@@ -49,20 +49,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</svg>
 					</span>
 				</a>
-
 				<a href="<?php the_permalink(); ?>" class="archive__item_title"><?php the_title(); ?></a>
 
 		<?php
 
 	}
 
+	add_filter( 'woocommerce_after_shop_loop_item_title', 'wpspec_show_product_description', 5 );
+
+	function wpspec_show_product_description() {
+		?>
+			<p class="archive__item_size"><?php the_field('size'); ?>
+				<img src="/wp-content/themes/panno/assets/img/svg/size.svg" alt="">
+			</p>
+		<?php
+		echo '<div class="woo-product-short-desc archive__item_text">' . get_the_excerpt() . '</div> ';
+	}
 
 //--------------------------------------------price--------------------------------
 	remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
-	add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price_wrap', 10 );
+	add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price_wrap', 11 );
 	function woocommerce_template_loop_price_wrap() {
-
-		?>
+	?>
 
 			<p class="archive__item_price">
 				<?php global $product; if ( $price_html = $product->get_price_html() ) : ?>
@@ -70,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php endif; ?>
 			</p>
 
-		</div>
+			</div>
 
 		<?php
 
