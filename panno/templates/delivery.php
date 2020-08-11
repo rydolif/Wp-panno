@@ -1,5 +1,5 @@
 <?php
-/* Template name: Контакты */
+/* Template name: Доставка */
 ?>
 
 <?php get_header(); ?>

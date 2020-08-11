@@ -551,11 +551,16 @@
 		.btn
 			opacity: 0
 
+			+r(992)
+				opacity: 1
+
 			img
 				margin-top: -3px
 				width: 17px
 				height: 15px
 				border-radius: 0
+
+			
 
 		&_wrap
 			padding-bottom: 25px
@@ -1414,7 +1419,8 @@
 			padding-right: 0
 			justify-content: center
 
-		.btn
+		a
+			@extend .btn
 			max-width: 330px
 
 
@@ -3180,6 +3186,19 @@
 
 		&:last-child
 			margin-bottom: 0
+
+
+.screen-reader-text
+	display: none
+
+.wbu-quantity
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100%
+
+
+
 
 
 @import "page"

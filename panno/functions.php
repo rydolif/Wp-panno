@@ -105,7 +105,7 @@ add_action('after_setup_theme', 'schoolstudy_content_width', 0);
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/includes/custom-header.php';
+// require get_template_directory() . '/includes/custom-header.php';
 
 /**
  * Implement the Script-Style
@@ -129,7 +129,7 @@ require get_template_directory() . '/includes/acf.php';
 /**
  * filter - фильтр каталога
  */
-require get_template_directory() . '/includes/filter.php';
+// require get_template_directory() . '/includes/filter.php';
 
 
 
@@ -139,7 +139,7 @@ require get_template_directory() . '/includes/filter.php';
 if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/includes/woocommerce.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
-	require get_template_directory() . '/woocommerce/includes/wc-functions-single.php';
+	// require get_template_directory() . '/woocommerce/includes/wc-functions-single.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-archive.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
 }
@@ -147,12 +147,12 @@ if (class_exists('WooCommerce')) {
 /**
  * mini-cart
  */
-require get_template_directory() . '/includes/cart.php';
+// require get_template_directory() . '/includes/cart.php';
 
 /**
  * post-type
  */
-require get_template_directory() . '/includes/post-type.php';
+// require get_template_directory() . '/includes/post-type.php';
 
 //------------------пагинация----------------------
 	function wptuts_pagination( $args = array() ) {
@@ -233,10 +233,7 @@ require get_template_directory() . '/includes/post-type.php';
 	remove_action('wp_head','feed_links', 2); // минус ссылки на основной rss и комментарии
 	remove_action('wp_head','rsd_link');  // сервис Really Simple Discovery
 	remove_action('wp_head','wlwmanifest_link'); // Windows Live Writer
-	remove_action('wp_head','wp_generator');  // скрыть версию wordpress
-	function modify_jquery() {
-					if (!is_admin()) {           
-					wp_deregister_script('jquery');
-					}
+	function theme_name_scripts() {
+			wp_enqueue_script( 'jquery' );
 	}
-	add_action('init', 'modify_jquery');
+	add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
