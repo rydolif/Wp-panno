@@ -147,7 +147,7 @@ if (class_exists('WooCommerce')) {
 /**
  * mini-cart
  */
-// require get_template_directory() . '/includes/cart.php';
+require get_template_directory() . '/includes/cart.php';
 
 /**
  * post-type
