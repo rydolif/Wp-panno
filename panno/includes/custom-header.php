@@ -70,3 +70,6 @@ if ( ! function_exists( 'schoolstudy_header_style' ) ) :
 		<?php
 	}
 endif;
+
+
+

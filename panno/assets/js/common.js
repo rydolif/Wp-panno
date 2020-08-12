@@ -142,10 +142,10 @@ $(function() {
 //---------------------------tabs-audio-filter-----------------------
   $('.tabs__wrap').hide();
   $('.tabs__wrap:first').show();
-  $('.tabs ul a:first').addClass('active');
-  $('.tabs ul a').click(function(event){
+  $('.tabs h2 a:first').addClass('active');
+  $('.tabs h2 a').click(function(event){
     event.preventDefault();
-    $('.tabs ul a').removeClass('active');
+    $('.tabs h2 a').removeClass('active');
     $(this).addClass('active');
     $('.tabs__wrap').hide();
     var selectTab = $(this).attr('href');

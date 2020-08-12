@@ -107,9 +107,7 @@
 
 	<?php get_template_part( 'parts/modal' ); ?>
 
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/scripts.min.js"></script>
-
-	<?php get_footer(); ?>
+	<?php wp_footer(); ?>
 
 </body>
 </html>

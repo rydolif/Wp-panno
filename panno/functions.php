@@ -46,7 +46,7 @@ if (!function_exists('schoolstudy_setup')) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(array(
-			'menu-1' => esc_html__('Primary', 'schoolstudy'),
+			'menu-1' => esc_html__('Первичный', 'schoolstudy'),
 		));
 
 		/*
@@ -105,7 +105,7 @@ add_action('after_setup_theme', 'schoolstudy_content_width', 0);
 /**
  * Implement the Custom Header feature.
  */
-// require get_template_directory() . '/includes/custom-header.php';
+require get_template_directory() . '/includes/custom-header.php';
 
 /**
  * Implement the Script-Style
@@ -237,3 +237,4 @@ require get_template_directory() . '/includes/cart.php';
 			wp_enqueue_script( 'jquery' );
 	}
 	add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+	

@@ -32,9 +32,9 @@
 			<nav class="header__nav nav">
 				<?php 
 					wp_nav_menu( array(
-						'menu'=>'menu',
+						'menu'=>'nav',
 						'menu_class'=>'header__nav_list',
-						'theme_location'=>'menu',
+						'theme_location'=>'nav',
 					));
 				?>
 				</ul>
@@ -103,10 +103,14 @@
 							</g>
 						</svg>
 					</div>
-					<ul>
-						<li><a href="#">Вход</a></li>
-						<li><a href="#">Регистрация</a></li>
-					</ul>
+						<?php 
+							if ( is_user_logged_in() ) {
+								wp_nav_menu( array( 'menu'=>'login-in', 'theme_location' => 'login-in' ) );
+							}
+							else {
+								wp_nav_menu( array( 'menu'=>'login-out', 'theme_location' => 'login-out' ) );
+							}
+						?>
 				</div>
 				<div class="header__info_cart">
 				
@@ -115,7 +119,6 @@
 					</div>
 				</div>
 
-				
 			</div>
 
 		</div>
