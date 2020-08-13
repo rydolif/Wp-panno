@@ -795,16 +795,53 @@
 
 		+r(992)
 			margin-bottom: 20px
+			flex-wrap: wrap
 
 		+r(480)
 			padding: 0
 
+		.added_to_cart
+			position: absolute
+			top: 15px
+			right: 0
+			color: $color--red
+
+		.cart
+			position: relative
+			display: flex
+			justify-content: space-between
+			width: 71%
+
+			+r(992)
+				width: 100%
+				padding: 10px 0
+
+			+r(480)
+				flex-wrap: wrap
+
+		.button
+			@extend .btn
+
 		&_price
+			flex-shrink: 1
+			padding-top: 35px
+			padding-bottom: 55px
 			font-size: 20px
 			font-weight: 700
 
+			+r(992)
+				padding: 0
+
+			+r(480)
+				text-align: center
+				width: 100%
+
 		&_wrap
 			+between
+
+			+r(480)
+				width: 100%
+				justify-content: center
 
 			input
 				width: 40px
@@ -868,6 +905,8 @@
 
 	&__img
 		margin-bottom: 25px
+		border-radius: 20px
+		overflow: hidden
 
 		+r(767)
 			margin-bottom: 15px
@@ -878,10 +917,13 @@
 
 		img
 			width: 100%
+			height: auto
+			border-radius: 20px
 
 	&__previews
 		img
 			width: 100%
+			height: auto
 
 		.swiper-slide
 			border: 3px solid transparent
@@ -1219,6 +1261,9 @@
 .cart
 	padding-top: 35px
 	padding-bottom: 55px
+
+	.wbu-qty-button
+		display: none !important
 
 	h2
 		margin-bottom: 30px
@@ -3502,6 +3547,7 @@
 			content: ': '
 			margin-right: 6px
 
+
 .woocommerce
 	&__cart-item
 		display: flex
@@ -3555,6 +3601,10 @@
 
 	.shop_table .cart-subtotal
 		display: none
+
+	&-product-gallery__trigger
+		display: none
+
 
 .order
 	@extend .contacts__wrap

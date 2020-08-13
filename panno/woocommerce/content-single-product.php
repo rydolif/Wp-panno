@@ -22,7 +22,7 @@ global $product;
 /**
  * Hook: woocommerce_before_single_product.
  *
- * @hooked woocommerce_output_all_notices - 10
+ * @hooked wc_print_notices - 10
  */
 do_action( 'woocommerce_before_single_product' );
 
@@ -31,7 +31,7 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( 'tovar__container container', $product ); ?>>
 
 	<?php
 	/**
@@ -43,7 +43,30 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="summary entry-summary">
+	<div class="tovar__content summary entry-summary">
+
+		<h2>
+			<?php the_title(); ?>
+		</h2>
+
+		<ul class="tovar__attr">
+			<?php
+				$product_attributes = $product->get_attributes();
+				$visible_attr = [];
+				foreach ($product_attributes as $attribute) {
+					if ($attribute->get_visible() && ($attribute['variation'] !== true)) {
+						array_push($visible_attr, $attribute);
+					}
+				}
+				foreach ($visible_attr as $product_attribute_key => $product_attribute) :
+			?>
+				<li class="product-attr <?php echo esc_attr($product_attribute['name']); ?>">
+					<span class="producrt-attr__label"><?php echo wp_kses_post(wc_attribute_label($product_attribute['name'])); ?>: </span>
+					<b class="producrt-attr__name"><?php echo wp_kses_post($product->get_attribute($product_attribute['name'])); ?></b>
+				</li>
+			<?php endforeach; ?>
+		</ul>
+
 		<?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
@@ -59,7 +82,11 @@ if ( post_password_required() ) {
 		 */
 		do_action( 'woocommerce_single_product_summary' );
 		?>
+
+		</div>
+
 	</div>
+
 
 	<?php
 	/**

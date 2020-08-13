@@ -46,6 +46,7 @@ gulp.task('scripts', function() {
 		'panno/assets/libs/jquery.mask.min.js', 					//----форма
 		'panno/assets/libs/swiper/swiper.min.js', 				//----swiper
 		'panno/assets/libs/jquery.popupoverlay.js', 				//----модалки
+		'panno/assets/libs/fancybox/jquery.fancybox.js', 				//----модалки
 		'panno/assets/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
