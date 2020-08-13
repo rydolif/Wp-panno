@@ -1511,6 +1511,7 @@
 			margin-bottom: 5px
 			border-radius: 15px
 			text-align: center
+			color: $color--red
 
 	&__container
 		height: 100%
@@ -1547,7 +1548,6 @@
 
 			.active
 				text-decoration: underline
-
 
 		&_line
 			width: 100%
@@ -3370,5 +3370,217 @@
 	text-align: center
 
 
+.checkout
+	padding-top: 35px
+	padding-bottom: 55px
+
+	&__coupon
+		margin-bottom: 20px
+
+		&_line
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			input
+				width: 75%
+				border-color: #97cce5
+
+			button
+				width: 24%
+				min-width: 170px
+
+				+r(480)
+					min-width: 150px
+					padding: 0
+
+		.woocommerce-info
+			font-size: 20px
+
+			+r(992)
+				font-size: 16px
+
+			+r(480)
+				font-size: 14px
+
+		a
+			color: $color--accent
+
+	&__table
+		overflow: auto
+		max-height: 400px
+
+	h2
+		@extend h2
+		margin-bottom: 20px
+
+	label
+		font-size: 12px
+		color: #b4b6ba
+		width: 20%
+
+		+r(480)
+			width: 25%
+
+	input
+		color: $color--text
+
+		+r(480)
+			padding: 0 10px
+
+		&:hover,
+		&:focus
+			border-color: #97cce5
+			color: $color--text
+
+	.screen-reader-text
+		display: block
+		font-size: 1px !important
+		opacity: 0
+
+	.woocommerce-input-wrapper
+		width: 78%
+
+		+r(480)
+			width: 70%
+
+	&__btn
+		justify-content: flex-end !important
+		padding-top: 15px
+		margin-bottom: 0
+
+	&__wrap
+		background-color: #eaedf2
+		border-radius: 25px
+		padding: 35px 40px
+
+		+r(767)
+			padding: 20px
+
+		+r(480)
+			padding: 15px
+			border-radius: 15px
+
+	&__form
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		+r(992)
+			justify-content: center
+
+	&__col
+		width: 49%
+
+		+r(992)
+			width: 100%
+			margin-bottom: 20px
+			max-width: 480px
+
+		&:last-child
+			+r(992)
+				margin-bottom: 0
+
+	.form-row
+		margin-bottom: 15px
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	.order-total
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding: 10px 6px
+		font-size: 26px
+
+	.checkout__final_header
+		font-size: 22px
+
+		&::after
+			content: ': '
+			margin-right: 6px
+
+.woocommerce
+	&__cart-item
+		display: flex
+		margin-bottom: 15px
+
+		.amount
+			font-size: 22px
+			font-weight: 700
+
+		.product-name
+			@extend .archive__item_title
+			width: 100%
+			display: flex
+			align-items: center
+			background-color: #eaedf2
+			border-top-left-radius: 15px
+			border-bottom-left-radius: 15px
+			padding: 10px
+			margin-bottom: 0
+
+			&:hover,
+			&:focus
+				color: $color--text
+
+			strong
+				margin-left: 5px
+
+		.product-total
+			background-color: #eaedf2
+			border-top-right-radius: 15px
+			border-bottom-right-radius: 15px
+			display: flex
+			align-items: center
+			padding: 10px
+
+		.product-quantity
+			color: $color--red
+
+	&__product-thumbnail
+		width: 80px
+		height: 80px
+		margin-right: 20px
+		flex-shrink: 0
+		overflow: hidden
+		border-radius: 20px
+		box-shadow: 0 0 5px 0 rgba(#fff, 1)
+
+		img
+			width: 100%
+			height: 100%
+
+	.shop_table .cart-subtotal
+		display: none
+
+.order
+	@extend .contacts__wrap
+	text-align: center
+	flex-direction: column
+
+	.order_details
+		margin-bottom: 25px
+
+	.woocommerce-notice
+		@extend h2
+
+	.woocommerce-table
+		margin: 0 auto 25px
+		text-align: left
+
+		td, th
+			padding: 2px 10px
+
+		a
+			color: $color--accent
+
+			&:hover,
+			&:focus
+				text-decoration: underline
+		
+	address
+		margin-bottom: 0
 
 @import "page"

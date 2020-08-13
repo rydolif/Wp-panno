@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-	<section class="order">
+	<section class="checkout">
 		<div class="container">
 				
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

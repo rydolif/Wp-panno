@@ -140,6 +140,7 @@ if (class_exists('WooCommerce')) {
 	require get_template_directory() . '/includes/woocommerce.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
 	// require get_template_directory() . '/woocommerce/includes/wc-functions-single.php';
+	require get_template_directory() . '/woocommerce/includes/wc-function-checkout.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-archive.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
 }
