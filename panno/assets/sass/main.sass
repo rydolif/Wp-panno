@@ -949,10 +949,44 @@
 	padding-top: 35px
 	padding-bottom: 55px
 
+	&__logout
+		width: 100%
+
+	.woocommerce-table
+		margin: 0 auto
+
+	&__section
+		text-align: center
+		margin-bottom: 20px
+
+		&:last-child
+			margin-bottom: 0
+
+		mark
+			background-color: $color--accent
+			padding: 0 5px
+			color: #ffffff
+
+		a
+			color: $color--accent
+
+			&:hover,
+			&:focus
+				text-decoration: underline
+
+	.woocommerce-notices-wrapper
+		width: 100%
+
 	&__container
 		display: flex
 		flex-wrap: wrap
 		align-items: flex-start
+
+	.woocommerce
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		width: 100%
 
 	&__nav
 		width: 330px
@@ -1032,12 +1066,25 @@
 			&:last-child
 				margin-bottom: 0
 
-			input
+			.form-row
+				+between
+				width: 100%
+
+			.woocommerce-input-wrapper
 				max-width: 71%
+				width: 100%
+
+			#billing_address_2_field
+				margin-left: 29%
+
+				span
+					max-width: 100%
+
+			input
+				width: 100%
 
 				+r(767)
 					padding: 0 10px
-					max-width: 60%
 
 				+r(420)
 					max-width: 100%
@@ -1049,6 +1096,7 @@
 			label
 				color: #b4b6ba
 				font-size: 12px
+				max-width: 25%
 
 				+r(420)
 					margin-bottom: 5px
@@ -1161,6 +1209,8 @@
 				color: $color--red
 				text-decoration: underline
 
+	.woocommerce-notices-wrapper
+		@extend .profile__wrap
 
 .contacts
 	padding-top: 35px

@@ -25,22 +25,32 @@ do_action( 'woocommerce_before_edit_account_address_form' ); ?>
 	<?php wc_get_template( 'myaccount/my-address.php' ); ?>
 <?php else : ?>
 
-	<form method="post" class="cabinet__content">
+	<form method="post" class="profile__wrap">
 
-		<div class="woocommerce__address-fields woocommerce-address-fields">
+		<h2>СОХРАНЕННЫЕ АДРЕСА</h2>
+
+		<div class="">
 			<?php do_action( "woocommerce_before_edit_address_form_{$load_address}" ); ?>
 
-			<div class="woocommerce-address-fields__field-wrapper cabinet__form form">
+			<div class="profile__wrap_block woocommerce-address-fields__field-wrapper">
 				<?php
-				foreach ( $address as $key => $field ) {
-					woocommerce_form_field( $key, $field, wc_get_post_data_by_key( $key, $field['value'] ) );
-				}
+					foreach ( $address as $key => $field ) {
+
+				?>
+					<div class="profile__wrap_line">
+				<?php
+						woocommerce_form_field( $key, $field, wc_get_post_data_by_key( $key, $field['value'] ) );
+
+				?>
+					</div>
+					<?php
+					}
 				?>
 			</div>
 
 			<?php do_action( "woocommerce_after_edit_address_form_{$load_address}" ); ?>
 
-			<p>
+			<p class="profile__wrap_btn">
 				<button type="submit" class="btn btn--cart button" name="save_address" value="<?php esc_attr_e( 'Save address', 'woocommerce' ); ?>"><?php esc_html_e( 'Save address', 'woocommerce' ); ?></button>
 				<?php wp_nonce_field( 'woocommerce-edit_address', 'woocommerce-edit-address-nonce' ); ?>
 				<input type="hidden" name="action" value="edit_address" />

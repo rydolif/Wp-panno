@@ -19,19 +19,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-do_action( 'woocommerce_before_account_navigation' );
 ?>
 
-<div class="cabinet__container container woocommerce-MyAccount-content">
-
-	<nav class="cabinet__nav woocommerce-MyAccount-navigation">
-		<?php 
-			wp_nav_menu( array(
-				'menu'=>'profile',
-				'menu_class'=>'',
-				'theme_location'=>'menu',
-			) );
-		?>
-	</nav>
-
-<?php do_action( 'woocommerce_after_account_navigation' ); ?>
+<nav class="profile__nav woocommerce-MyAccount-navigation">
+	<?php 
+		wp_nav_menu( array(
+			'menu'=>'profile',
+			'menu_class'=>'',
+			'theme_location'=>'menu',
+		) );
+	?>
+</nav>

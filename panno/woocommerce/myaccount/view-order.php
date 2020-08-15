@@ -22,7 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<p><?php
+
+<div class="profile__wrap">
+<p class="profile__section"><?php
 	/* translators: 1: order number 2: order date 3: order status */
 	printf(
 		__( 'Order #%1$s was placed on %2$s and is currently %3$s.', 'woocommerce' ),
@@ -53,3 +55,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php endif; ?>
 
 <?php do_action( 'woocommerce_view_order', $order_id ); ?>
+	
+</div>

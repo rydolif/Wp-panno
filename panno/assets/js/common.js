@@ -1,4 +1,14 @@
 $(function() {
+
+//-------------------------------активна ссилка на якій знаходишся для меню---------------------------------------
+  $('.profile__nav a').each(function () {
+    var location = window.location.href;
+    var link = this.href; 
+    if(location == link) {
+        $(this).addClass('active');
+    }
+  });
+
   // ------------------------------form-phone-----------------------------
   $('input[type="tel"]').mask('+0 (000) 000-00-00');
 
@@ -142,10 +152,10 @@ $(function() {
 //---------------------------tabs-audio-filter-----------------------
   $('.tabs__wrap').hide();
   $('.tabs__wrap:first').show();
-  $('.tabs h2 a:first').addClass('active');
-  $('.tabs h2 a').click(function(event){
+  $('.tabs ul a:first').addClass('active');
+  $('.tabs ul a').click(function(event){
     event.preventDefault();
-    $('.tabs h2 a').removeClass('active');
+    $('.tabs ul a').removeClass('active');
     $(this).addClass('active');
     $('.tabs__wrap').hide();
     var selectTab = $(this).attr('href');
