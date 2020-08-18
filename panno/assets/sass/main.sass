@@ -60,10 +60,10 @@
 	&__logo
 		display: flex
 		align-items: center
-		width: 90px
+		// width: 90px
 
 		img
-			width: 100%
+			width: 90px
 			height: auto
 			margin-right: 15px
 
@@ -368,6 +368,9 @@
 		animation-direction: alternate
 		z-index: -1
 
+		+r(767)
+			display: none
+
 		&--1
 			top: 10%
 			animation-name: decor1
@@ -529,6 +532,7 @@
 			justify-content: space-around
 
 	&__item
+		position: relative
 		width: 25%
 		padding: 0 15px
 		text-align: center
@@ -576,7 +580,18 @@
 				height: 15px
 				border-radius: 0
 
-			
+		.added_to_cart
+			position: absolute
+			bottom: 45px
+			left: 0
+			right: 0
+			width: 100%
+			text-align: center
+			color: $color--red
+			line-height: 1
+
+			+r(480)
+				bottom: 41px
 
 		&_wrap
 			padding-bottom: 25px
@@ -1219,6 +1234,7 @@
 		@extend .profile__wrap
 		width: 100%
 
+
 .contacts
 	padding-top: 35px
 	padding-bottom: 55px
@@ -1390,6 +1406,9 @@
 		border-bottom-left-radius: 20px
 		background-color: $bg--gray
 		padding: 0 55px
+
+		+r(1440)
+			width: 56%
 
 		+r(1200)
 			padding: 10px 15px
