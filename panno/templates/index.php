@@ -65,7 +65,7 @@
 							<br>использованию в детских и медицинских учреждениях.
 							<br>Обои на флизелиновой основе и тканное полотно также 
 							<br>полностью безопасны для людей и животных.
-							<br>Ознакомиться и скачать сертификаты вы можете <a href="<?php echo get_template_directory_uri(); ?>/assets/file/delivery.xlsx">здесь</a>
+							<br>Ознакомиться и скачать сертификаты вы можете <a href="<?php echo get_template_directory_uri(); ?>/assets/file/file.zip">здесь</a>
 						</p>
 					</div>
 					<div class="info__wrap_item">

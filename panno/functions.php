@@ -239,3 +239,9 @@ require get_template_directory() . '/includes/cart.php';
 	}
 	add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 	
+
+	/* WooCommerce Password Strength */
+add_filter( 'woocommerce_min_password_strength', 'example_woocommerce_min_password_strength' );
+function example_woocommerce_min_password_strength( $strength ) {
+    return 1;
+}
