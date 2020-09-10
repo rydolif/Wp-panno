@@ -107,24 +107,27 @@
 			</div>
 
 			<script>
-				$('#audioFrenata').on('ended', function() {
+				$('audio').on('ended', function() {
 							manageImageObjectsLevel();
 				}).get(0).play();
 			</script>
 
 			<div class="panno__wrap dragscroll">
 				<div class="panno__img">
-					<picture>
+					<!-- <picture>
 						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/panno.webp" type="image/webp">
-						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/panno.jpg" type="image/jpeg"> 
+						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/panno.jpg" type="image/jpeg">
+						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/panno-mob.jpg" type="image/jpeg" media="(max-width: 992px)">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/panno.jpg" alt="Alt Text!">
-					</picture>
+					</picture> -->
+
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/panno.webp" alt="Alt Text!">
 
 					<div id="one" class="tabs__wrap panno__audio-wrap">
 
-						<div id="audioFrenata" class="panno__audio panno__audio--right panno__audio--1">
+						<div class="panno__audio panno__audio--right panno__audio--1">
 							<span></span>
-							<audio controls="controls">
+							<audio id="audioFrenata1" controls="controls">
 								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sun.MP3" type="audio/mpeg">
 								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sun.ogg" type="audio/ogg">
 							</audio>
@@ -132,14 +135,14 @@
 
 						<div class="panno__audio panno__audio--2">
 							<span></span>
-							<audio controls="controls">
+							<audio id="audioFrenata2" controls="controls">
 								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sky.MP3" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--3">
 							<span></span>
-							<audio controls="controls">
+							<audio id="audioFrenata3" controls="controls">
 								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/smoke.MP3" type="audio/mpeg">
 							</audio>
 						</div>
