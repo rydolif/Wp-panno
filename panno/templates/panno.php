@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
 
-	<?php get_template_part( 'parts/preloader' ); ?>
+	<!-- <?php get_template_part( 'parts/preloader' ); ?> -->
 
 	<section class="panno tabs">
 		<div class="panno__container container">
@@ -114,2048 +114,2043 @@
 
 			<div class="panno__wrap dragscroll">
 				<div class="panno__img">
-					<!-- <picture>
+					<picture>
 						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/panno.webp" type="image/webp">
 						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/panno.jpg" type="image/jpeg">
-						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/panno-mob.jpg" type="image/jpeg" media="(max-width: 992px)">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/panno.jpg" alt="Alt Text!">
-					</picture> -->
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/panno-mob.jpg" alt="Alt Text!">
 
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/panno.webp" alt="Alt Text!">
-
-					<div id="one" class="tabs__wrap panno__audio-wrap">
+					<!-- <div id="one" class="tabs__wrap panno__audio-wrap">
 
 						<div class="panno__audio panno__audio--right panno__audio--1">
 							<span></span>
 							<audio id="audioFrenata1" controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sun.MP3" type="audio/mpeg">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sun.ogg" type="audio/ogg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sun.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--2">
 							<span></span>
 							<audio id="audioFrenata2" controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sky.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sky.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--3">
 							<span></span>
 							<audio id="audioFrenata3" controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/smoke.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/smoke.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--4">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/cloud.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/cloud.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--5">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/weather-vane.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/weather-vane.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--6">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/roof.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/roof.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--7">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/there-are-few.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/there-are-few.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--8">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/on-the-roof.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/on-the-roof.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--9">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-roof-of.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-roof-of.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--10">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/in-the-living-room.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/in-the-living-room.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--11">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-living-room-kitchen.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-living-room-kitchen.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--12">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-stairs-from.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-stairs-from.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--13">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/on-the-second-floor.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/on-the-second-floor.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--14">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-parent's-bedroom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-parent's-bedroom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--15">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/in-clear-weather.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/in-clear-weather.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--16">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-bathroom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-bathroom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--17">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/yesterday.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/yesterday.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--18">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/i'm-lucky.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/i'm-lucky.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--19">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/i-do-not.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/i-do-not.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--20">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-house-is-not.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-house-is-not.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--21">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/it-is-very-cozy.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/it-is-very-cozy.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--22">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/if-there's-smoke.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/if-there's-smoke.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--23">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-house-is-built.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-house-is-built.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--24">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-house-has-three.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-house-has-three.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--25">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/it-also-has.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/it-also-has.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--26">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/oh-and-there's-a-garage.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/oh-and-there's-a-garage.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--27">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/chimney.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/chimney.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--28">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/from-the-second.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/from-the-second.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--29">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-wallpaper.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/the-wallpaper.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--30">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/i-love-to.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/i-love-to.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--31">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/there-is-a-big.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/there-is-a-big.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--32">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/there-are-a-lot-of.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/there-are-a-lot-of.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--33">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/trees.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/trees.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--34">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/drainpipe.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/drainpipe.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--35">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/french-window.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/french-window.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--36">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/window.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/window.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--right panno__audio--37">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/maple.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/maple.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--38">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/balcony.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/balcony.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--39">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/garage-gates.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/garage-gates.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--40">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/balcony-lattice.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/balcony-lattice.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--41">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/car.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/car.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--42">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/front-door.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/front-door.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--43">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/column.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/column.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--44">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/wall.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/wall.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--45">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/ceiling.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/ceiling.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--46">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/steps.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/steps.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--47">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/lilac.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/lilac.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--48">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/path.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/path.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--49">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/gate.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/gate.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--50">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mailbox.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mailbox.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--51">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/fence.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/fence.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--52">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-house-has-a-fenced-yard.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-house-has-a-fenced-yard.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--53">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/a-blue-mailbox.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/a-blue-mailbox.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--54">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bushes.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bushes.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--55">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/flowers.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/flowers.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--56">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/a-wide-grey.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/a-wide-grey.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--57">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/on-both-sides.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/on-both-sides.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--58">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/my-granny.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/my-granny.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--59">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/we-recently.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/we-recently.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--60">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-living-room-is.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-living-room-is.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--61">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-mom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-mom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--62">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/every-private.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/every-private.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--63">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/there-is-also-a-real.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/there-is-also-a-real.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--64">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-dining-room-has.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-dining-room-has.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--65">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-kitchen-is-very.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/our-kitchen-is-very.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--66">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/we-have-a-lot-of.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/we-have-a-lot-of.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--67">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/when-my-frends.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/when-my-frends.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--right panno__audio--68">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/swing.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/swing.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--right panno__audio--69">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/appletree.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/appletree.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--70">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/roof-tiles.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/roof-tiles.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--71">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/wallpaper.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/wallpaper.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--72">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/game-console.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/game-console.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--73">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/book.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/book.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--74">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bag-chair.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bag-chair.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--75">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/board-game.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/board-game.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--76">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/shelf.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/shelf.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--77">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/toy-train.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/toy-train.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--78">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/carpet.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/carpet.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--79">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/children's-room.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/children's-room.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--80">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/TV.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/TV.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--81">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/shower-head.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/shower-head.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--82">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mixer-tap.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mixer-tap.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--83">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mirror.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mirror.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--84">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/toothpaste.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/toothpaste.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--85">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/toothbrush.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/toothbrush.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--86">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/towel-rail.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/towel-rail.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--87">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/towel.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/towel.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--88">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/curtain.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/curtain.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--89">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bathtub.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bathtub.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--90">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/washbasin.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/washbasin.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--91">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/washing-machine.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/washing-machine.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--92">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mat.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mat.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--93">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/laundry-basket.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/laundry-basket.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--94">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/toilet.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/toilet.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--95">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bathroom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bathroom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--96">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/table-lamp.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/table-lamp.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--97">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/alarm-clock.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/alarm-clock.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--98">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/painting.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/painting.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--99">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bed.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bed.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--100">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/dresser.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/dresser.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--101">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/pillow.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/pillow.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--102">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/wardrobe.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/wardrobe.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--103">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bedcover.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bedcover.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--104">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/blanket.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/blanket.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--105">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bedside-table.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bedside-table.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--106">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bedroom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bedroom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--107">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/floor.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/floor.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--108">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/railing.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/railing.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--109">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/framed-photograph.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/framed-photograph.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--110">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/piano.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/piano.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--111">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bookcase.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/bookcase.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--112">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/chandelier.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/chandelier.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--113">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/fireplace.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/fireplace.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--114">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/floor-lamp.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/floor-lamp.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--115">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/coffee-table.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/coffee-table.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--116">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/piano-bench.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/piano-bench.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--117">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/armchair.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/armchair.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--118">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sofa.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sofa.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--119">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/stairs.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/stairs.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--120">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/living-room.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/living-room.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--121">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/chess.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/chess.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--122">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/parquet.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/parquet.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--123">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/apple-compote.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/apple-compote.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--124">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mushrooms.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/mushrooms.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--125">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/compote-of-berries.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/compote-of-berries.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--126">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/wine.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/wine.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--127">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/pumpkin.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/pumpkin.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--128">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/cucumbers.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/cucumbers.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--129">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/tomatoes.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/tomatoes.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--130">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/potato.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/potato.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--131">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/cellar.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/cellar.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--132">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/kitchen-cupboards.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/kitchen-cupboards.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--133">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/clock.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/clock.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--134">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/kettle.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/kettle.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--135">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sink.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/sink.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--136">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/stove.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/stove.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--right panno__audio--137">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/gas-cooker.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/gas-cooker.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--138">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/oven.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/oven.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--139">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/cooking-pot.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/cooking-pot.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--140">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/fridge.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/fridge.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--141">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/microwave.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/microwave.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--142">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/firewood.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/firewood.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--143">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/dining-table.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/dining-table.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--144">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/chair.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/chair.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--145">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/dining-room.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en/dining-room.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
-					</div>
+					</div> -->
 
 					<div id="two" class="tabs__wrap panno__audio-wrap">
 						<div class="panno__audio panno__audio--right panno__audio--1">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-sun.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-sun.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--2">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-sky.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-sky.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--3">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-smoke.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-smoke.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--4">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-cloud.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-cloud.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--5">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-weather-vane.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-weather-vane.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--6">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-roof.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-roof.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--7">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-there-are-few.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-there-are-few.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--8">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-on-the-roof.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-on-the-roof.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--9">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-roof-of.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-roof-of.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--10">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-in-the-living-room.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-in-the-living-room.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--11">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-living-room-kitchen.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-living-room-kitchen.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--12">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-stairs-from.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-stairs-from.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--13">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-on-the-second-floor.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-on-the-second-floor.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--14">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-parent's-bedroom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-parent's-bedroom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--15">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-in-clear-weather.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-in-clear-weather.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--16">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-bathroom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-bathroom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--17">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-yesterday.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-yesterday.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--18">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-i'm-lucky.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-i'm-lucky.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--19">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-i-do-not.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-i-do-not.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--20">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-house-is-not.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-house-is-not.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--21">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-it-is-very-cozy.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-it-is-very-cozy.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--22">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-if-there's-smoke.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-if-there's-smoke.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--23">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-house-is-built.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-house-is-built.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--24">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-house-has-three.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-house-has-three.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--25">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-it-also-has.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-it-also-has.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--26">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-oh-and-there's-a-garage.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-oh-and-there's-a-garage.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--27">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-chimney.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-chimney.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--28">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-from-the-second.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-from-the-second.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--29">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-wallpaper.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-the-wallpaper.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--30">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-i-love-to.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-i-love-to.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--31">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-there-is-a-big.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-there-is-a-big.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--32">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-there-are-a-lot-of.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-there-are-a-lot-of.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--33">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-trees.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-trees.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--34">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-drainpipe.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-drainpipe.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--35">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-french-window.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-french-window.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--36">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-window.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-window.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--37">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-maple.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-maple.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--38">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-balcony.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-balcony.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--39">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-garage-gates.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-garage-gates.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--40">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-balcony-lattice.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-balcony-lattice.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--41">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-car.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-car.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--42">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-front-door.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-front-door.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--43">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-column.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-column.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--44">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-wall.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-wall.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--45">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-ceilling.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-ceilling.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--46">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-steps.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-steps.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--47">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-lilac.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-lilac.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--48">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-path.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-path.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--49">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-gate.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-gate.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--50">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mailbox.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mailbox.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--51">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-fence.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-fence.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--52">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-house-has-a-fenced-yard.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-house-has-a-fenced-yard.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--53">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-a-blue-mailbox.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-a-blue-mailbox.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--54">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bushes.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bushes.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--55">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-flowers.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-flowers.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--56">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-a-wide-grey.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-a-wide-grey.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--57">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-on-both-sides.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-on-both-sides.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--58">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-my-granny.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-my-granny.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--59">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-we-recently.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-we-recently.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--60">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-living-room-is.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-living-room-is.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--61">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-mom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-mom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--62">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-every-private.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-every-private.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--63">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-there-is-also-a-real.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-there-is-also-a-real.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--64">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-dining-room-has.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-dining-room-has.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--65">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-kitchen-is-very.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-our-kitchen-is-very.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--66">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-we-have-a-lot-of.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-we-have-a-lot-of.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--bottom panno__audio--67">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-when-my-frends.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-when-my-frends.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--68">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-swing.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-swing.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--right panno__audio--69">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-appletree.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-appletree.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--70">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-roof-tiles.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-roof-tiles.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--71">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-wallpaper.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-wallpaper.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--72">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-game-console.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-game-console.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--73">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-book.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-book.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--74">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bag-chair.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bag-chair.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--75">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-board-game.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-board-game.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--76">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-shelf.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-shelf.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--77">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-toy-train.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-toy-train.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--78">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-carpet.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-carpet.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--79">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-children's-room.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-children's-room.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--80">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-TV.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-TV.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--81">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-shower-head.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-shower-head.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--82">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mixer-tap.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mixer-tap.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--83">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mirror.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mirror.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--84">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-toothpaste.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-toothpaste.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--85">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-toothbrush.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-toothbrush.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--86">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-towel-rail.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-towel-rail.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--87">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-towel.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-towel.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--88">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-curtain.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-curtain.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--89">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bathtub.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bathtub.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--90">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-washbasin.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-washbasin.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--91">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-washing-machine.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-washing-machine.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--92">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mat.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mat.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--93">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-laundry-basket.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-laundry-basket.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--94">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-toilet.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-toilet.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--95">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bathroom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bathroom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--96">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-table-lamp.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-table-lamp.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--97">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-alarm-clock.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-alarm-clock.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--98">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-painting.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-painting.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--99">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bed.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bed.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--100">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-dresser.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-dresser.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--101">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-pillow.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-pillow.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--102">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-wardrobe.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-wardrobe.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--103">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bedcover.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bedcover.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--104">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-blanket.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-blanket.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--105">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bedside-table.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bedside-table.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--106">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bedroom.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bedroom.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--107">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-floor.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-floor.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--108">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-railing.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-railing.aac" type="audio/mpeg">
 							</audio>
 						</div>
 						
 						<div class="panno__audio panno__audio--109">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-framed-photograph.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-framed-photograph.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--110">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-piano.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-piano.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--111">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bookcase.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-bookcase.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--112">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-chandelier.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-chandelier.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--113">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-fireplace.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-fireplace.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--114">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-floor-lamp.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-floor-lamp.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--115">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-coffee-table.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-coffee-table.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--116">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-piano-bench.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-piano-bench.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--117">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-armchair.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-armchair.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--118">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-sofa.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-sofa.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--119">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-stairs.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-stairs.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--120">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-living-room.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-living-room.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--121">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-chess.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-chess.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--122">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-parquet.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-parquet.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--123">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-apple-compote.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-apple-compote.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--124">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mushrooms.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-mushrooms.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--125">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-compote-of-berries.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-compote-of-berries.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--126">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-wine.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-wine.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--127">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-pumpkin.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-pumpkin.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--128">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-cucumbers.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-cucumbers.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--129">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-tomatoes.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-tomatoes.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--130">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-potato.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-potato.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--131">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-cellar.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-cellar.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--132">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-kitchen-cupboards.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-kitchen-cupboards.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--133">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-clock.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-clock.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--134">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-kettle.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-kettle.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--135">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-sink.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-sink.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--136">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-stove.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-stove.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--137">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-gas-cooker.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-gas-cooker.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--138">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-oven.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-oven.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--139">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-cooking-pot.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-cooking-pot.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--140">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-fridge.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-fridge.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--141">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-microwave.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-microwave.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--142">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-firewood.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-firewood.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--143">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-dining-table.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-dining-table.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--144">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-chair.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-chair.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
 						<div class="panno__audio panno__audio--145">
 							<span></span>
 							<audio controls="controls">
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-dining-room.MP3" type="audio/mpeg">
+								<source src="<?php echo get_template_directory_uri(); ?>/assets/audio/en-ru/c-dining-room.aac" type="audio/mpeg">
 							</audio>
 						</div>
 
